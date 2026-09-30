@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">KotlinCourseMephi</string>
+    <string name="greeting">Greetings, Earthlings</string>
+    <string name="greeting_text_view_hint">Greeting text view</string>
+    <string name="enter_pw_instr">Enter password</string>
+    <string name="repeat_pw_instr">Repeat password</string>
+    <string name="password_1_input_accessibility">Password text field</string>
+    <string name="password_input_hint">Password</string>
+    <string name="submit_btn_txt">Set</string>
+    <string name="success_msg">Success</string>
+</resources>
