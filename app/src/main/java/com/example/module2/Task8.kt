@@ -22,6 +22,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -71,7 +72,8 @@ fun WaterTracker() {
                     text = waterCount.toString(),
                     fontSize = 48.sp,
                     fontWeight = FontWeight.Bold,
-                    color = secondaryColor
+                    color = secondaryColor,
+                    modifier = Modifier.testTag("water_counter")
                 )
 
                 Spacer(modifier = Modifier.height(30.dp))
@@ -107,7 +109,8 @@ fun WaterTracker() {
                 }
 
                 Text(
-                    text = "Дней с 1500мл и больше подряд: $waterGoalDaysCount"
+                    text = "Дней с 1500мл и больше подряд: $waterGoalDaysCount",
+                    modifier = Modifier.testTag("streak_counter")
                 )
             }
         })
